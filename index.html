@@ -77,7 +77,7 @@
             .controller('ImageController', ['$scope', '$http', function($scope, $http) {
                 $scope.images = [];
                 $scope.selectedImage = null;
-                var limit = 15; // Limit the number of pictures to fetch
+                var limit = 15;
 
                 // Fetch images from the API
                 $http.get('https://picsum.photos/v2/list?limit=' + limit)
